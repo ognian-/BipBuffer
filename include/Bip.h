@@ -102,8 +102,8 @@ BIP<T>::BIP(T* buf, std::size_t size) noexcept :
 		B{&A.end, &upper},
 		Get{&B},
 		Put{&B},
-		NextGet{&B},
-		NextPut{&B} {
+		NextGet{&A},
+		NextPut{&A} {
 }
 
 template <typename T>
